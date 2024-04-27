@@ -5,18 +5,17 @@ import { getAuth } from 'firebase/auth';
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyDBHTUtOeuCON7AEF3UPPxU1sHsnFfBv-M",
-    authDomain: "ecommerce-for.firebaseapp.com",
-    projectId: "ecommerce-for",
-    storageBucket: "ecommerce-for.appspot.com",
-    messagingSenderId: "609664686595",
-    appId: "1:609664686595:web:302bf25cc8efa64a4e4c36"
+  apiKey: "AIzaSyCrhMeYUsY8bjTcOrifE75fl77Xg4IoYC0",
+  authDomain: "myecom-9d4cd.firebaseapp.com",
+  projectId: "myecom-9d4cd",
+  storageBucket: "myecom-9d4cd.appspot.com",
+  messagingSenderId: "844854420877",
+  appId: "1:844854420877:web:a37a5b5243b5ae1c3e09c4"
 };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 
-const fireDB = getFirestore(app);
-const auth = getAuth(app);
-
-export { fireDB, auth }
+const fireDB=getFirestore(app);
+const auth=getAuth(app);
+export {auth,fireDB};
